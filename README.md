@@ -37,3 +37,6 @@
   - InputView
     - 게임의 입력 담당
 
+- Util
+  - InputParser
+    - 유저의 입력의 타입을 변경해준다.
