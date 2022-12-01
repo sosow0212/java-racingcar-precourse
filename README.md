@@ -18,18 +18,16 @@
 - Domain
   - Car
     - 자동차의 이름과 위치를 관리한다.
-  - Game
-    - 게임의 턴을 관리하고 우승자 관리를 한다.
+  - Cars
+    - 일급컬렉션, Car를 관리한다.
 
 - Controller
   - GameController
     - 게임의 전반적인 흐름을 관리한다.
 
 - Exception
-  - CarException
-    - 자동차 이름에 대한 예외 처리
   - GameException
-    - 시도할 횟수 예외처리
+    - 게임에 대한 예외처리
 
 - View
   - OutputView
