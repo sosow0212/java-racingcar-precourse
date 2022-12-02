@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import racingcar.util.RandomNumberGenerator;
 
 public class Cars {
     private final List<Car> cars;
@@ -12,8 +13,8 @@ public class Cars {
         this.cars = cars;
     }
 
-    public void moveCar() {
-        cars.forEach(car -> car.move());
+    public void moveCar(RandomNumberGenerator randomNumberGenerator) {
+        cars.forEach(car -> car.move(randomNumberGenerator.move()));
     }
 
     public Map<String, Integer> getResult() {
